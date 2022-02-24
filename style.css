@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(193, 38%, 86%);
+    padding: 20px;
+    margin: 0;
+    font-family: 'Manrope',sans-serif;
+}
+
+.container {
+    position: relative;
+    transform: translateY(50%);
+}
+
+.advice-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    margin: auto;
+
+    max-width: 500px;
+    text-align: center;
+    background-color: rgb(62 73 88);
+    border-radius: 12px;
+}
+
+.advice-id {
+    font-size: 10px;
+    padding-bottom: 15px;
+    color: hsl(150, 100%, 66%);
+}
+
+.advice-box p {
+    margin: auto;
+    line-height: 33px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.divider {
+    padding: 20px 0;
+}
+
+.dice-light {
+    padding: 30px;
+    background-color: hsl(150, 100%, 66%);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+}
+
+.dice-light:hover{
+    cursor: pointer;
+    box-shadow: 0px 1px 20px 3px hsl(150deg 100% 66%)
+
+}
+
+.dice-light:hover .dice {
+    animation: rotate .4s ease-in-out .2s  forwards;
+    -webkit-animation: rotate 1s ease-in-out .1s  forwards;
+}
+
+.dice {
+    position: absolute;
+}
+
+
+@keyframes rotate {
+    50% { transform: rotate(180deg); }
+}
